@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    background-color:#dddada;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: rgb(99, 211, 99);
+    padding: 1em;
+    
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu li {
+    list-style: none;
+    display: inline;
+    padding: 16px;
+    font-size: 2em;
+    cursor: pointer;
+    
+    
+}
+
+.menu li:hover {
+    background-color: rgb(0, 81, 255);
+}
+
+
+.container img {
+    max-width:400px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.sobreALoja {
+    padding-top: 16px;
+}
+
+.sobreALoja {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 1%;
+}
+
+.information h2 {
+    color: blue;
+    font-size: 1em;
+    padding: top 1px;
+}
+
+.information h3 {
+    font-size: 1em;
+    padding: 8px;
+}
+
+.information {
+    padding: 8px;
+}
+
+.loja h2,
+.produtos {
+    padding: 30px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.loja img {
+    max-width: 100%;
+}
+
+.loja {
+    margin-bottom: 56px; 
+}
+
+.loja h2 {
+    color: blue;
+}
+
+hr {
+    border-color: blue;
+    
+}
+
+.itens p, h5{
+    display: flex;
+    font-size: 0.4em;
+    align-items: center;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 16px;
+    background-color:rgb(99, 211, 99);
+    color: rgb(0, 81, 255);
+    font-size: 0.5em;
+
+}
+
+button:hover{
+    color: rgb(17, 0, 255);
+    background-color: green;
+    font-weight: bold;
+}
+
+.itens img {
+    height: 220px;
+    width: 220px;
+}
+
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 4px;
+    row-gap: 2%;
+
+}
+
+
+@media screen and (min-width: 640px) and (max-width:1023px){
+    .container{
+        max-width: 90%;
+    }
+    .sobreALoja{
+        display: inline;
+    }
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2px;
+
+    }
+}
+
+@media screen and (max-width: 638px){
+    header {
+        font-size: 0.7em;
+        padding: 16px;
+    }
+
+    .sobreALoja {
+        display: inline;
+    }
+    .produtos {
+        display: inline;
+        padding: 3em;
+
+        
+    }
+
+    .produtos h5, p {
+        color: red;
+        padding: 8px;
+        margin-left: 30%;
+    }
+
+    button {
+        margin: 26px auto;
+    }
+
+
+}
+
+
+
+
+
